@@ -1,10 +1,16 @@
 package com.practice.whileloop;
+import java.util.Scanner;
 
 public class ReverseOfNumber {
 
 	public static void main(String[] args) {
 		
-		int num = 342;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter a Number :");
+		int num = sc.nextInt();
+		
+		int temp = num;
 		int rev = 0;
 		
 		while(num >= 1) {
@@ -14,7 +20,11 @@ public class ReverseOfNumber {
 			num = num / 10;
 			
 		}
-		System.out.println(rev);
+		System.out.println("Original Number = "+temp);
+		System.out.println("Reverse Number = "+rev);
+		
+		sc.close();
 	}
+	
 	
 }
